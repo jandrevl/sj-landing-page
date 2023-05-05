@@ -1,11 +1,14 @@
 .Header {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     background-image: url(/public/images/sj-logo-banner.png);
     background-repeat: no-repeat;
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:0;
+    /* position: relative; */
 }
 
 .header-name {
@@ -17,7 +20,7 @@
 
 .header-name h1 {
     font-family: Mahogany;
-    font-size: 50px;
+    font-size: 40px;
     /* border: 1px solid blue; */
     margin: 0;
     white-space: nowrap;
@@ -82,11 +85,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: fixed;
-        top: 90px;
+        /* position: fixed; */
+        position: absolute;
+        top: 85px;
         right: -400px;
         width: 300px;
-        height: 100vh;
+        /* height: 100vh; */
         background: rgb(235, 235, 149);
         box-shadow: 0 40px 60px black;
         padding: 40px 0 0 10px;
@@ -113,4 +117,10 @@
         margin-right: 30px;
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .header-name {
+        display: none;
+    }
 }
