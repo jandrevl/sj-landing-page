@@ -20,7 +20,6 @@ code {
 .section-title {
   box-sizing: border-box;
   margin: 100px 0 0 10%;
-  /* color: red; */
   color: rgb(143, 133, 0);
   letter-spacing: 5px;
   position: relative;

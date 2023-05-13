@@ -2,6 +2,31 @@ import ServiceCard from './ServiceCard';
 import './Services.css';
 
 const Services = () => {
+
+    const services = [
+        {
+            image: "herancas.png",
+            description: "Heranças Sucessões"
+        },
+        {
+            image: "trabalho.png",
+            description: "Direito do Trabalho"
+        },
+        {
+            image: "urbanismo.png",
+            description: "Urbanismo Predial"
+        },
+        {
+            image: "notariado.png",
+            description: "Notariado"
+        },
+        {
+            image: "consultoria.png",
+            description: "Consultoria Jurídica"
+        }
+
+    ]
+
     return (
         <>
             <div className="section-title"><h1>Serviços</h1></div>
@@ -12,7 +37,9 @@ const Services = () => {
                 <p>No nosso escritório especializamo-nos em:</p>
 
                 <div className="card-container">
-                    <ServiceCard />
+                    {services.map((service, index) => (<ServiceCard key={index} service={ service } />))
+                    }
+                    
                 </div>
             </div>
 

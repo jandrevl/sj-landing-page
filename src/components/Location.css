@@ -1,0 +1,20 @@
+.Localizacao {
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 50px 10% 50px 10%;
+    background-image: url(/public/images/gavel-image.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+.map {
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}

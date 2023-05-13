@@ -1,15 +1,18 @@
 import './ServiceCard.css';
 
 
-const ServiceCard = () => {
+const ServiceCard = (props) => {
+
+    const image = "/images/" + props.service.image;
+    const description = props.service.description;
     return ( 
     <>
     <div className="ServiceCard">
         <div className="image">
-        <img src="/images/consultoria.png" alt="Heranças/Sucessões" />
+        <img src={ image } alt={ description } />
         </div>
         <div className="service-description">
-        <p>Consultoria Jurídica</p>
+        <p>{ description }</p>
         </div>
 
     </div>
