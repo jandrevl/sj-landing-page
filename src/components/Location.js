@@ -14,22 +14,31 @@ const Location = () => {
         )
     }
 
-    return ( 
+    return (
         <>
-        <div className="section-title"><h1>Localização</h1></div>
-        <div className="Localizacao">
-            <div className="map">
-                
-            <GoogleMap zoom={15} center={{lat: 37.032373, lng: -7.837158}} mapContainerClassName="map-container">
-            <MarkerF position={{lat: 37.032373, lng: -7.837158}}  />
-        </GoogleMap>
-        </div>
-            
-        </div>
-        
-        
+            <div className="section-title"><h1>Localização</h1></div>
+            <div className="Localizacao">
+
+                <div className="map">
+                    <GoogleMap zoom={15} center={{ lat: 37.032373, lng: -7.837158 }} mapContainerClassName="map-container">
+                        <MarkerF position={{ lat: 37.032373, lng: -7.837158 }} />
+                    </GoogleMap>
+                </div>
+
+                <div className="address">
+                    <h2>Sandra Joaquim - Solicitadora</h2>
+                    <p>Rua Dr António Malafaia Freire Teles 20B</p>
+                    <p>8700-447 Olhão</p>
+                    <p>Portugal</p>
+                    <br />
+
+                </div>
+
+            </div>
+
+
         </>
-     );
+    );
 }
- 
+
 export default Location;
