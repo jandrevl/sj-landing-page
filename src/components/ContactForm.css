@@ -1,0 +1,58 @@
+
+.ContactForm * {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+
+}
+
+.ContactForm  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3% 10%;
+    text-align: justify;
+    font-size:large;
+    background-color: #fffeb4;
+
+}
+
+.ContactForm p {
+    font-weight: bold;
+}
+
+.form-container {
+    
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: 20px;
+
+}
+
+.form-container input, .form-container textarea, .form-container button {
+    display: block;
+    
+}
+
+.form-container input {
+    width: 70%;
+    height: 7vh;
+    border: 0px;
+    font-size: 3vh;
+}
+
+.form-container textarea {
+    width: 70%;
+    height: 30vh;
+    border: 0;
+    font-size: 3vh;
+
+}
+
+::placeholder {
+    font-family: sans-serif;
+}
+

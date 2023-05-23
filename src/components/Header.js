@@ -22,7 +22,7 @@ render() {
                     <li><a href='/'>Sobre</a></li>
                     <li><a href='/'>Serviços</a></li>
                     <li><a href='/'>Onde Estamos</a></li>
-                    <li><a href='/'>Contactos</a></li>
+                    <li><a href='/'>Contacto</a></li>
                     
                 </ul>
 

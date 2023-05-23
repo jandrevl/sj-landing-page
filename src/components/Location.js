@@ -27,10 +27,27 @@ const Location = () => {
 
                 <div className="address">
                     <h2>Sandra Joaquim - Solicitadora</h2>
+                    <hr />
+                    {/* <i class="fa-solid fa-location-dot"></i><br/> */}
                     <p>Rua Dr António Malafaia Freire Teles 20B</p>
                     <p>8700-447 Olhão</p>
                     <p>Portugal</p>
-                    <br />
+
+                    <hr />
+
+                    <p>
+                    <i className="fa-solid fa-square-envelope"></i>
+                    <span style={{marginLeft: 10}}></span>
+                    <span>sandrajoaquim.solicitadora@gmail.com</span>
+                    </p>
+                    <hr />
+                    
+                    <p>
+                    <i className="fa-solid fa-square-phone"></i>
+                    <span style={{marginLeft: 10}}></span>
+                    <span>+351 911 016 481</span>
+                    </p>
+
 
                 </div>
 
