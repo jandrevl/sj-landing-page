@@ -4,17 +4,30 @@ import './ContactForm.css';
 const ContactForm = () => {
 
     const [formData, setFormData] = useState({contactName:'', email:'', phone:'', subject:''});
+    var [isFormValid, setIsFormValid] = useState(false);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+        
+        console.log(formData);
+        
+        if (formData.contactName !== '' && 
+        formData.email !== '' && 
+        formData.subject !== '') {
+            setIsFormValid(true);
+        }
+
+        console.log('isFormValid is: ' + isFormValid);
       };
-
-
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        console.log('after submitting the formData is')
         console.log(formData);
+        setFormData({contactName:'', email:'', phone:'', subject:''})
+        setIsFormValid(false);
+        alert('Pedido de contacto enviado');
     }
 
 
@@ -33,13 +46,15 @@ const ContactForm = () => {
 
                     <input type="text" 
                     name='contactName' 
-                    placeholder='Nome' 
+                    placeholder='Nome*' 
                     value={formData.contactName} 
-                    onChange={handleChange} />
+                    onChange={handleChange} 
+                    
+                     />
 
                     <input type="email" 
                     name='email' 
-                    placeholder='eMail' 
+                    placeholder='eMail*' 
                     value={formData.email} 
                     onChange={handleChange} />
 
@@ -51,11 +66,11 @@ const ContactForm = () => {
 
                     <textarea type="text" 
                     name='subject' 
-                    placeholder='Descrição do assunto' 
+                    placeholder='Descrição do assunto*' 
                     value={formData.subject} 
                     onChange={handleChange} />
 
-                    <button type='submit'>Enviar pedido de contacto</button>
+                    <button className={isFormValid? 'active-button' : 'inactive-button'} disabled={!isFormValid} type='submit'>Enviar pedido de contacto</button>
 
                 </form>
 

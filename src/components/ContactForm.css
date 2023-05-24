@@ -34,25 +34,48 @@
 
 .form-container input, .form-container textarea, .form-container button {
     display: block;
+    border: 2px solid rgb(143, 133, 0);
     
 }
 
 .form-container input {
     width: 70%;
     height: 7vh;
-    border: 0px;
+    /* border: 0px; */
     font-size: 3vh;
 }
 
 .form-container textarea {
     width: 70%;
     height: 30vh;
-    border: 0;
+    /* border: 0; */
     font-size: 3vh;
 
 }
 
 ::placeholder {
     font-family: sans-serif;
+}
+
+.form-container button {
+    height: 7vh;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: rgb(29, 26, 2);
+    color: rgb(255, 246, 121);
+    
+}
+
+.form-container .active-button:hover {
+    cursor: pointer;
+}
+
+.form-container .active-button:active {
+    background-color: rgb(255, 246, 121);
+    color: rgb(29, 26, 2);
+}
+
+.form-container button:disabled {
+    background-color: rgb(165, 155, 155);
 }
 
